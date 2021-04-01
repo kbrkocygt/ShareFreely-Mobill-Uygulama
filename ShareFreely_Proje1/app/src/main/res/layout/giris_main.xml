@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootgirisEkrani"
+    tools:context=".GirisEkrani">
+
+
+    <ImageView
+        android:id="@+id/imViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="177dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        app:srcCompat="@mipmap/icon" />
+
+    <EditText
+        android:id="@+id/txtSifre"
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/txtKullaniciAdi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:drawableRight="@drawable/ic_lock"
+
+
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/txtKullaniciAdi"
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/imViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:drawableRight="@drawable/ic_person"
+        android:ems="10"
+        android:hint="KullanıcıAdı" />
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="114dp"
+        android:onClick="onClick"
+        android:text="Giriş" />
+
+    <TextView
+        android:id="@+id/lblSifreUnuttum"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSifre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginEnd="11dp"
+        android:text="Şifremi unuttum?"
+        android:textAlignment="textEnd"
+        android:textStyle="italic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="213dp"
+        android:layout_marginRight="11dp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/lblKayitOl"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:layout_marginBottom="77dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="Yeni hesap oluştur"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        tools:ignore="OnClick" />
+
+    <CheckBox
+        android:id="@+id/cbBeniHatirla"
+        android:layout_width="194dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/txtSifre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="194dp"
+        android:text="Beni Hatırla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="182dp" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kubrakocyigit.sharefreely_proje1">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShareFreely"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SifremiUnuttumActivity" />
+        <activity
+            android:name=".AramaActivity"
+            android:label="Ara"
+            android:theme="@style/Theme.ShareFreely.Base" />
+        <activity
+            android:name=".KisiTweetleriActivity"
+            android:parentActivityName=".AramaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AramaActivity" />
+        </activity>
+        <activity
+            android:name=".ShareFreelyGonder"
+            android:label="ShareFreelyle"
+            android:parentActivityName=".ShareFreely">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShareFreely" />
+        </activity>
+        <activity
+            android:name=".ProfilActivity"
+            android:label="Profil"
+            android:parentActivityName=".ShareFreely">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShareFreely" />
+        </activity>
+        <activity
+            android:name=".ShareFreely"
+            android:label="@string/title_activity_share_freely"
+            android:theme="@style/Theme.ShareFreely.NoActionBar" />
+        <activity android:name=".AcilisLogo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KullaniciKaydi" />
+        <activity android:name=".GirisEkrani" />
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootkayitEkrani"
+    tools:context=".KullaniciKaydi">
+
+    <EditText
+        android:id="@+id/txtSifreKayit"
+
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/txtKullaniciAdiKayit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/txtKullaniciAdiKayit"
+
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/txtMailKayit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/ic_person"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+
+
+    <ImageView
+        android:id="@+id/imViewKullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="183dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="107dp"
+        app:srcCompat="@mipmap/icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/txtAdSoyadKayit"
+
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/imViewKullanici"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:drawableRight="@drawable/ic_person"
+        android:ems="10"
+        android:hint="Ad Soyad"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/txtMailKayit"
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/txtAdSoyadKayit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:drawableRight="@drawable/ic_email"
+        android:ems="10"
+        android:hint="Email"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/btnKaydol"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtSifreKayit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="61dp"
+        android:onClick="onClick"
+        android:text="Kaydol"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="61dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/lblZatenHesabimVar"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKaydol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Zaten hesabım var"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_arama"
+        android:transitionName="profilImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_person"  />
+    <!-- app:civ_border_width="1dp"
+     app:civ_border_color="?attr/colorAccent"-->
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/aramaAdsoyad"
+            android:transitionName="adsoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Levent YADIRGA"/>
+
+        <TextView
+            android:id="@+id/aramaKullaniciadi"
+            android:transitionName="kullaniciadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lyadirga"/>
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/aramaMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lyadirga@gmail.com"/>
+
+    </LinearLayout>
+
+</LinearLayout>
